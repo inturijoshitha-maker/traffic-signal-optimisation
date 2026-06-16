@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Traffic Signal Optimization</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚦 Smart Traffic Signal Optimization System</h1>
+        <p>AI-Based Traffic Density Analysis & Signal Timing Optimization</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Traffic Monitoring Dashboard</h2>
+
+            <label>Number of Vehicles</label>
+            <input
+                type="number"
+                id="vehicles"
+                placeholder="Enter vehicle count">
+
+            <button onclick="optimizeTraffic()">
+                Optimize Signal
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+        <div class="info-section">
+
+            <div class="info-card">
+                <h3>Low Traffic</h3>
+                <p>0 - 10 Vehicles</p>
+                <span>15 Sec Green Signal</span>
+            </div>
+
+            <div class="info-card">
+                <h3>Medium Traffic</h3>
+                <p>11 - 30 Vehicles</p>
+                <span>30 Sec Green Signal</span>
+            </div>
+
+            <div class="info-card">
+                <h3>High Traffic</h3>
+                <p>Above 30 Vehicles</p>
+                <span>45 Sec Green Signal</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
